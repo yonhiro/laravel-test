@@ -17,4 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/error','App\Http\Controllers\ErrorController@error');
+
 Route::get('/hello','App\Http\Controllers\HelloController@index');

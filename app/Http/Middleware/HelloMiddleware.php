@@ -16,6 +16,12 @@ class HelloMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
+        $pathinfo = $request->getPathInfo();
+        $hoge=$request->input('token');
+        if ($pathinfo != '/error') {
+            return redirect('error');
+        }
+
         return $next($request);
     }
 }
