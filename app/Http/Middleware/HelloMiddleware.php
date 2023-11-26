@@ -18,9 +18,9 @@ class HelloMiddleware
     {
         $pathinfo = $request->getPathInfo();
         $hoge=$request->input('token');
-        if ($pathinfo != '/error') {
-            return redirect('error');
-        }
+        // if ($pathinfo != '/error') {
+        //     return redirect('error');
+        // }
 
         return $next($request);
     }
