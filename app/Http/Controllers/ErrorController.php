@@ -8,6 +8,6 @@ class ErrorController extends Controller
 {
     //error
     public function error(Request $request) {
-        return view('error');
+        return view('erroraaa');
     }
 }
