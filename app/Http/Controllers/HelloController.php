@@ -9,6 +9,6 @@ class HelloController extends Controller
     //index
     public function index(Request $request) {
         $coolString = 'Hello from Controller.';
-        return view('hello', compact('coolString'));
+        return view('helloaaaa', compact('coolString'));
     }
 }
